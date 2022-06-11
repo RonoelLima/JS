@@ -1,0 +1,12 @@
+.relogio {
+    font-size: 3em;
+}
+
+.pausado{
+    color: 'red';
+    font-size: 3em;
+}
+
+body{
+    background-color: greenyellow
+}
