@@ -2,7 +2,7 @@
 //Modelo criado
 //não é necessário colocar a virgula após criar uma nova chave
 function Pessoa(nome, sobrenome){
-    //Privados
+    //Atributos ou métodos Privados
     const ID = 123456
     const metodoInterno = function(){
 
