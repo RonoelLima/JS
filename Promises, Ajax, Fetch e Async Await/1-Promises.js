@@ -9,7 +9,7 @@ function esperaAi(msg, tempo){
     return new Promise((resolve, reject) => {
 
         if(typeof msg !== 'string') reject('BAD VALUE')
-
+        
         setTimeout(()=> {
            resolve(msg) 
         }, tempo)
@@ -24,7 +24,7 @@ esperaAi('Conexão com o DB', rand(1, 3))
     return esperaAi('Buscando dados da BASE', rand(1, 3))
 }).then( (res) => { 
     console.log(res)
-    return esperaAi( 5, rand(1, 3))
+    return esperaAi('Tratando os dados da BASE', rand(1, 3))
 }).then( (res) => {
     console.log(res)
 }).then( (res) => {
