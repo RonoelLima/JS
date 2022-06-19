@@ -10,14 +10,14 @@ const path = require('path')
 
 const helmet = require('helmet')
 app.use(helmet())
-// -----------------------------------------------------------//----------------------------------------------------
-const csrf = require('csurf')
-app.use(csrf());
+//-----------------------------------------------------------//----------------------------------------------------
+// const csrf = require('csurf')
+// app.use(csrf());
 
 
 // -----------------------------------------------------------//----------------------------------------------------
 
-const { middlewareGlobal, checkCsrfError, csrfMiddleware} = require('./middlewares/middlewares')
+const { middlewareGlobal } = require('./middlewares/middlewares')
 const mongoose = require('mongoose')
 
 // -----------------------------------------------------------//----------------------------------------------------
@@ -63,8 +63,8 @@ app.use(express.static(path.resolve(__dirname, 'public')))
 // passando um middle global para todas as requisições
 
 app.use(middlewareGlobal)
-app.use(checkCsrfError)
-app.use(csrfMiddleware)
+// app.use(checkCsrfError)
+// app.use(csrfMiddleware)
 app.use(routes)
 
 

@@ -15,7 +15,7 @@ exports.paginaInicial = (req, res, next) => {
     // req.session.usuario = {nome: 'Ronoel', logado: true }
     req.flash('info', 'Hello World')
     console.log('respondendo o cliente')
-    res.render('index.ejs', {
+    res.render('home.ejs', {
         titulo: 'Este será o titulo da página',
         numeros: [0, 1, 2, 3, 4, 5, 6, 7, 8 ]
     })
