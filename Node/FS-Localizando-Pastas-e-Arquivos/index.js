@@ -25,3 +25,4 @@ async function walk(files, rootDir) {
 
 readdir(rootDir)
 
+// o comando pwd informa o caminho absoluto no terminal

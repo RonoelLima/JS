@@ -13,7 +13,7 @@ app.post('/', (req, res) => {
     res.send(`O que você enviou foi ${req.body.nome}`)
 })
 
-// ao colocar : informamos que a rota vai receber parâmetros
+// ao colocar : informa que a rota vai receber parâmetros
 // ao colocar uma interrogação informa-se que o parâmtro é opicional
 // ao colocar dados na url após o sinal de interrogação exemplo ?nome=Ronoel&filho="PrdroLucas" os dados são acessados através da query
 app.get('/teste/:id?/:usuario?', (req, res) => {

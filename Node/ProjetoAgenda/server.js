@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     app.emit('pronto');
+    console.log('conectado com banco de dados')
   })
   .catch(e => console.log(e));
 const session = require('express-session');
